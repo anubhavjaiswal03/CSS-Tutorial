@@ -1,13 +1,19 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
 #product-overview {
 	background: crimson;
 }
 .section-title {
 	color: limegreen;
 }
+
 h1 {
 	color: white;
 	font-family: 'Anton', sans-serif;
 }
-h1 {
+
+/* h1 {
 	font-family: sans-serif;
-}
+} */
