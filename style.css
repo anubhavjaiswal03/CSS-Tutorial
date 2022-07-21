@@ -1,8 +1,18 @@
-section {
-	background: orangered;
-}
-
+/* universal selector
+* {
+	color: white;
+	background: brown;
+} */
+/* element selector */
 h1 {
 	color: white;
 	font-family: 'Anton', sans-serif;
+}
+/* id selector */
+#product-overview {
+	background: crimson;
+}
+/* class sellector */
+.section-title {
+	color: limegreen;
 }

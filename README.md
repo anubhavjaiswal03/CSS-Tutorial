@@ -1,3 +1,9 @@
-# Lesson 2
+# Lesson 3
 
-Adding additional Styles & importing Google Fonts
+More About Selectors
+
+- Element Selector
+- Class Selector
+- Id Selector
+- Univesal Selector
+- Attribute Selector
