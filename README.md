@@ -1,3 +1,3 @@
-# Lesson 1
+# Lesson 2
 
-Adding CSS to html files using an external .css file
+Adding additional Styles & importing Google Fonts
