@@ -1,4 +1,4 @@
-# Lesson 4 Inheritence
+# Lesson 5 Combinators
 
 CSS Combinators
 
