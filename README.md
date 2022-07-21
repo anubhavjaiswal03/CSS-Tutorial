@@ -17,5 +17,5 @@ Cascading styles mean multiple styles are applied to an element with an overwrit
 <img src="images/css-specificity-1.png" />
 <img src="images/css-specificity-2.png" />
 
-<p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://drive.google.com/file/d/1lfgkifEML6_MRS4B5aW69m8HyPyCON1A/view?usp=sharing">Download PDF</a>.</p>
+<p>This browser does not support PDFs. Please download the PDF to view it: <a href="css-specificity.pdf">Download PDF</a>.</p>
 </embed>
