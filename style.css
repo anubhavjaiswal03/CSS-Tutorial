@@ -5,16 +5,12 @@ body {
 #product-overview {
 	background: crimson;
 }
-.section-title {
-	color: limegreen;
-	font-family: inherit;
-}
 
-h1 {
+#product-overview h1 {
 	color: white;
 	font-family: 'Anton', sans-serif;
 }
 
-/* h1 {
+h1 {
 	font-family: sans-serif;
-} */
+}
