@@ -1,6 +1,6 @@
 # Lesson 9
 
-Removing hyperlink defaults like the underline by using text decoration and a better way to align <code>&lt;li&gt;</code> items into a nav bar.
+Removing hyperlink defaults like the underline by using text decoration and a way to vertically align <code>&lt;li&gt;</code> items into a nav bar.
 
 ## Understanding <code>text-decoration:</code>
 
