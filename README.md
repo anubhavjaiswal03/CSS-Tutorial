@@ -6,7 +6,7 @@ The box-sizing CSS property sets how the total width and height of an element is
 
 The box-sizing property defines how the width and height of an element are calculated: should they include padding and borders, or not.
 
-## box-sizing Property Values
+## 'box-sizing' Property Values
 
 | Value       | Description                                                                                                                      |
 | ----------- | -------------------------------------------------------------------------------------------------------------------------------- |
