@@ -1,3 +1,3 @@
-# Lesson 2
+# Lesson 6: The Box Model
 
-Adding additional Styles & importing Google Fonts
+Introduction to
