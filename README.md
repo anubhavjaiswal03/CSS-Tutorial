@@ -1,13 +1,9 @@
-# Lesson 9
+# Lesson 10
 
-Removing hyperlink defaults like the underline by using text decoration and a way to vertically align <code>&lt;li&gt;</code> items into a nav bar.
+Styling the anchor <code>&lt;a&gt;</code> tags.
 
-## Understanding <code>text-decoration:</code>
+## Understanding <code>&lt;a&gt;</code> The Anchor Element
 
-The [text-decoration](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration) shorthand CSS property sets the appearance of decorative lines on text. It is a shorthand for text-decoration-line, text-decoration-color, text-decoration-style, and the newer text-decoration-thickness property.
+The [<code>&lt;a&gt;</code>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) HTML element (or anchor element), with its href attribute, creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address.
 
-## Understanding <code>vertical align:</code>
-
-The [vertical-align](https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align) CSS property sets vertical alignment of an inline, inline-block or table-cell box.
-
-Please follow the MDN links for more information.
+Content within each <code>&lt;a&gt;</code> should indicate the link's destination. If the href attribute is present, pressing the enter key while focused on the <code>&lt;a&gt;</code> element will activate it.
