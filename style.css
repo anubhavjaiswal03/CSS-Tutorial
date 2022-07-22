@@ -29,6 +29,19 @@ body {
 	padding: 8px 16px;
 }
 
-.main-nav_items {
+.main-header > div {
 	display: inline-block;
+}
+
+.main-nav_items {
+	display: inherit; /*inline-block*/
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.main-nav {
+	display: inline-block;
+	text-align: right;
+	width: calc(100% - 46px);
 }
