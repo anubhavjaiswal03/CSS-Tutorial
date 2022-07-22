@@ -1,16 +1,18 @@
-# Lesson 8
+# Lesson 9
 
-The box-sizing CSS property sets how the total width and height of an element is calculated.
+Adding a Header to the project, to style it into a navigation bar
 
-[box-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing), height and width properties
+[display](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing) Property
 
-The box-sizing property defines how the width and height of an element are calculated: should they include padding and borders, or not.
+The display CSS property sets whether an element is treated as a block or inline element and the layout used for its children, such as flow layout, grid or flex.
 
-## 'box-sizing' Property Values
+## <code>display: </code> Property Values
 
-| Value       | Description                                                                                                                            |
-| ----------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| content-box | Default. The width and height properties (and min/max properties) includes only the content.<br /> Border and padding are not included |
-| border-box  | The width and height properties (and min/max properties) includes content, padding and border.                                         |
-| initial     | Sets this property to its default value. Read about initial.                                                                           |
-| inherit     | Inherits this property from its parent element.                                                                                        |
+| Value        | Description                                                                                                                                                         |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| inline       | Displays an element as an inline element (like <code>&lt;span&gt;</code>). <br/>Any height and width properties will have no effect                                 |
+| block        | Displays an element as a block element (like <code>&lt;p&gt;</code>). <br/>It starts on a new line, and takes up the whole width                                    |
+| inline-block | Displays an element as an inline-level block container. <br />The element itself is formatted as an inline element, <br />but you can apply height and width values |
+| none         | The element is completely removed                                                                                                                                   |
+
+... and many more for a full list please follow the mdn link above.
