@@ -9,3 +9,5 @@ The [text-decoration](https://developer.mozilla.org/en-US/docs/Web/CSS/text-deco
 ## Understanding <code>vertical align</code>
 
 The [vertical-align](https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align) CSS property sets vertical alignment of an inline, inline-block or table-cell box.
+
+Please follow the MDN links for more information.
