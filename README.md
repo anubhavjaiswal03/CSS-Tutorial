@@ -67,7 +67,7 @@ selector::pseudo-element {
 }
 ```
 
-### Example
+### Example 1
 
 The <code>::first-letter</code> pseudo-element is used to add a special style to the first letter of a text.
 
@@ -81,3 +81,16 @@ p::first-letter {
 ```
 
 **Note**: The <code>::first-letter</code> pseudo-element can only be applied to block-level elements.
+
+### Example 2
+
+The <code>::after</code> pseudo-element can be used to insert some content after the content of an element.
+
+The following example adds a (Link) after the content of each <code>&lt;a&gt;</code> element:
+
+```CSS
+.main-nav_item a::after {
+	content: ' (Link)';
+	color: #ff1b68;
+}
+```
