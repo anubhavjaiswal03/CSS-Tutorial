@@ -12,7 +12,7 @@ For example, it can be used to:
 - Style visited and unvisited links differently
 - Style an element when it gets focus
 
-## Syntax
+### Syntax
 
 The syntax of pseudo-classes:
 
@@ -22,7 +22,7 @@ selector:pseudo-class {
 }
 ```
 
-## Example
+### Example
 
 Links can be displayed in different ways:
 
@@ -57,7 +57,7 @@ For example, it can be used to:
 - Style the first letter, or line, of an element
 - Insert content before, or after, the content of an element
 
-## Syntax
+### Syntax
 
 The syntax of pseudo-elements:
 
@@ -67,7 +67,7 @@ selector::pseudo-element {
 }
 ```
 
-## Example
+### Example
 
 The <code>::first-letter</code> pseudo-element is used to add a special style to the first letter of a text.
 
