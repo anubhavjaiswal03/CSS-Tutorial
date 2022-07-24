@@ -4,7 +4,7 @@ Understanding [Pseudo Classes & Pseudo Elements](https://developer.mozilla.org/e
 
 ## Understanding Psuedo Classes
 
-A [pseudo-class](https://www.w3schools.com/css/css_pseudo_classes.asp) is used to define a special state of an element.
+A [pseudo-class](https://www.w3schools.com/css/css_pseudo_classes.asp) is used <mark>to define a special state of an element</mark>.
 
 For example, it can be used to:
 
@@ -50,7 +50,7 @@ a:active {
 
 ## Understanding Pseudo-elements
 
-A CSS [pseudo-element](https://www.w3schools.com/css/css_pseudo_elements.asp) is used to style specified parts of an element.
+A CSS [pseudo-element](https://www.w3schools.com/css/css_pseudo_elements.asp) is used <mark>to style specified parts of an element</mark>.
 
 For example, it can be used to:
 
@@ -69,13 +69,15 @@ selector::pseudo-element {
 
 ## Example
 
-The <code>::first-line</code> pseudo-element is used to add a special style to the first line of a text.
+The <code>::first-letter</code> pseudo-element is used to add a special style to the first letter of a text.
 
-The following example formats the first line of the text in all <p> elements:
+The following example formats the first letter of the text in all <code>&lt;p&gt;</code> elements:
 
 ```CSS
-p::first-line {
+p::first-letter {
   color: #ff0000;
-  font-variant: small-caps;
+  font-size: xx-large;
 }
 ```
+
+**Note**: The <code>::first-letter</code> pseudo-element can only be applied to block-level elements.
