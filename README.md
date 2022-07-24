@@ -54,7 +54,7 @@ To exclusively handle only image we can use <code>background-image</code> proper
 body {
   color: red;         /* Color of the content */
   background: white;  /*background color of the content, can also use url() to add image*/
-  display: block;     /*How to display the selector/element block/inline etc.*/
+  display: block;     /*How to display the selector/element block/inline/flex etc.*/
   padding: 0px auto;  /*Add Padding*/
   border: auto 0px;   /*Add Border*/
   margin: 0px;        /*Add Margin*/
