@@ -44,8 +44,15 @@ The display CSS property sets whether an element is treated as a block or inline
 
 <p>Here's an example for <code>visibility: hidden</code>&nbsp;:</p>
 
-<pre class="prettyprint linenums prettyprinted" role="presentation" style=""><ol class="linenums"><li class="L0"><span class="pun">.</span><span class="pln">box</span><span class="pun">-</span><span class="lit">1</span><span class="pln"> </span><span class="pun">{</span></li><li class="L1"><span class="pln">    visibility</span><span class="pun">:</span><span class="pln"> hidden</span><span class="pun">;</span></li><li class="L2"><span class="pun">}</span></li><li class="L3"><span class="pln">&nbsp;</span></li><li class="L4"><span class="pun">.</span><span class="pln">box</span><span class="pun">-</span><span class="lit">2</span><span class="pln"> </span><span class="pun">{</span></li><li class="L5"><span class="pln">    display</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">inline</span><span class="pun">-</span><span class="pln">block</span><span class="pun">;</span></li><li class="L6"><span class="pun">}</span></li></ol></pre>
-
+```CSS
+.box-1 {
+    visibility: hidden;
+}
+ 
+.box-2 {
+    display: inline-block;
+}
+```
 <p>Will render:</p>
 
 <p><code>_x</code>&nbsp;</p>
