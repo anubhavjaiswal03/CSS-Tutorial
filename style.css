@@ -8,7 +8,7 @@ body {
 }
 
 #product-overview {
-	background: #ff1b68;
+	background: url(freedom.jpg);
 	width: 100%;
 	height: 500px;
 	padding: 10px;
@@ -71,10 +71,7 @@ body {
 	color: #ff1b68;
 } */
 
-.main-nav_item a:hover {
-	color: white;
-	border-bottom: 5px solid white;
-}
+.main-nav_item a:hover,
 .main-nav_item a:active {
 	color: white;
 	border-bottom: 5px solid white;

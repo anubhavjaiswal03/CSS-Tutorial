@@ -1,96 +1,47 @@
-# Lesson 11
+# Lesson 12
 
-Understanding [Pseudo Classes & Pseudo Elements](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements)
+Understanding CSS Grouping rules & adding a background image
 
-## Understanding Psuedo Classes
+## Understanding CSS Grouping rules
 
-A [pseudo-class](https://www.w3schools.com/css/css_pseudo_classes.asp) is used <mark>to define a special state of an element</mark>.
-
-For example, it can be used to:
-
-- Style an element when a user mouses over it
-- Style visited and unvisited links differently
-- Style an element when it gets focus
-
-### Syntax
-
-The syntax of pseudo-classes:
-
-```CSS
-selector:pseudo-class {
-  property: value;
-}
-```
+As our CSS styling keeps getting larger due to the use of pseudo classes & elements, it gets harder to track these changes in the CSS files. So we group some rules which have share the same code
 
 ### Example
 
-Links can be displayed in different ways:
+For <code>.main-nav_item</code>'s anchor tag <code>&lt;a&gt;</code> had 2 pseudo-classes executing the same code block, hence we group these rules:
 
 ```CSS
-/* unvisited link */
-a:link {
-  color: #FF0000;
+.main-nav_item a:hover {
+	color: white;
+	border-bottom: 5px solid white;
 }
-
-/* visited link */
-a:visited {
-  color: #00FF00;
-}
-
-/* mouse over link */
-a:hover {
-  color: #FF00FF;
-}
-
-/* selected link */
-a:active {
-  color: #0000FF;
+.main-nav_item a:active {
+	color: white;
+	border-bottom: 5px solid white;
 }
 ```
 
-## Understanding Pseudo-elements
-
-A CSS [pseudo-element](https://www.w3schools.com/css/css_pseudo_elements.asp) is used <mark>to style specified parts of an element</mark>.
-
-For example, it can be used to:
-
-- Style the first letter, or line, of an element
-- Insert content before, or after, the content of an element
-
-### Syntax
-
-The syntax of pseudo-elements:
+### becomes:
 
 ```CSS
-selector::pseudo-element {
-  property: value;
+.main-nav_item a:hover,
+.main-nav_item a:active {
+	color: white;
+	border-bottom: 5px solid white;
 }
 ```
 
-### Example 1
+## Understanding how to add a background image
 
-The <code>::first-letter</code> pseudo-element is used to add a special style to the first letter of a text.
-
-The following example formats the first letter of the text in all <code>&lt;p&gt;</code> elements:
+In CSS there are a lot of ways this can be handled dependig on the context.
+we can replace a background color property with an image as shown below:
 
 ```CSS
-p::first-letter {
-  color: #ff0000;
-  font-size: xx-large;
-}
+background: url("background.jpg");
 ```
 
-**Note**: The <code>::first-letter</code> pseudo-element can only be applied to block-level elements.
-
-### Example 2
-
-The <code>::after</code> pseudo-element can be used to insert some content after the content of an element.
-
-The following example inserts a (Link) text after the content of each <code>&lt;a&gt;</code> element:
+To exclusively handle only image we can use <code>background-image</code> property.
 
 ```CSS
-.main-nav_item a::after {
-	content: ' (Link)';
-	color: #ff1b68;
-}
+  background-image: url(background.jpg);
 ```
