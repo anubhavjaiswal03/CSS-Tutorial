@@ -8,7 +8,9 @@ As our CSS styling keeps getting larger due to the use of pseudo classes & eleme
 
 ### Example
 
-For <code>.main-nav_item</code>'s anchor tag <code>&lt;a&gt;</code> had 2 pseudo-classes executing the same code block, hence we group these rules:
+For <code>.main-nav_item</code>'s anchor tag <code>&lt;a&gt;</code> had 2 pseudo-classes executing the same code block, hence we group those rules.
+
+### this:
 
 ```CSS
 .main-nav_item a:hover {
@@ -44,4 +46,19 @@ To exclusively handle only image we can use <code>background-image</code> proper
 
 ```CSS
   background-image: url(background.jpg);
+```
+
+**Some CSS Properties Worth Remebering:**
+
+```CSS
+body {
+  color: red;         /* Color of the content */
+  background: white;  /*background color of the content, can also use url() to add image*/
+  display: block;     /*How to display the selector/element block/inline etc.*/
+  padding: 0px auto;  /*Add Padding*/
+  border: auto 0px;   /*Add Border*/
+  margin: 0px;        /*Add Margin*/
+  width: 100%;        /*Describe Width*/
+  height: 500px;      /*Describe Height*/
+}
 ```
