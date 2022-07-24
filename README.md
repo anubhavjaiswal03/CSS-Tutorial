@@ -86,7 +86,7 @@ p::first-letter {
 
 The <code>::after</code> pseudo-element can be used to insert some content after the content of an element.
 
-The following example adds a (Link) after the content of each <code>&lt;a&gt;</code> element:
+The following example inserts a (Link) text after the content of each <code>&lt;a&gt;</code> element:
 
 ```CSS
 .main-nav_item a::after {
