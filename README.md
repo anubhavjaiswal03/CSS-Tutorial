@@ -1,10 +1,8 @@
 # Lesson 11
 
-Adding pseudo classes to some selectors.
+Understanding [Pseudo Classes & Pseudo Elements](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements)
 
 ## Understanding Psuedo Classes
-
-A [pseudo-class](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements) is a selector that selects elements that are in a specific state, e.g. they are the first element of their type, or they are being hovered over by the mouse pointer. They tend to act as if you had applied a class to some part of your document, often helping you cut down on excess classes in your markup, and giving you more flexible, maintainable code.
 
 A [pseudo-class](https://www.w3schools.com/css/css_pseudo_classes.asp) is used to define a special state of an element.
 
@@ -18,18 +16,17 @@ For example, it can be used to:
 
 The syntax of pseudo-classes:
 
-```
+```CSS
 selector:pseudo-class {
   property: value;
 }
 ```
 
-## Anchor Pseudo-classes
+## Example
 
 Links can be displayed in different ways:
 
-```
-
+```CSS
 /* unvisited link */
 a:link {
   color: #FF0000;
@@ -49,5 +46,36 @@ a:hover {
 a:active {
   color: #0000FF;
 }
+```
 
+## Understanding Pseudo-elements
+
+A CSS [pseudo-element](https://www.w3schools.com/css/css_pseudo_elements.asp) is used to style specified parts of an element.
+
+For example, it can be used to:
+
+- Style the first letter, or line, of an element
+- Insert content before, or after, the content of an element
+
+## Syntax
+
+The syntax of pseudo-elements:
+
+```CSS
+selector::pseudo-element {
+  property: value;
+}
+```
+
+## Example
+
+The <code>::first-line</code> pseudo-element is used to add a special style to the first line of a text.
+
+The following example formats the first line of the text in all <p> elements:
+
+```CSS
+p::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}
 ```
