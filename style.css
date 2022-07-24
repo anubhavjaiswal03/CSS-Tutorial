@@ -41,20 +41,25 @@ body {
 	font-size: 22px;
 }
 
-.main-nav_items {
-	display: inherit; /*inline-block*/
-	margin: 0 16px;
-	/* padding: 0 5px; */
-	list-style: none;
-	vertical-align: middle;
-}
-
 .main-nav {
 	display: inline-block;
 	text-align: right;
 	width: calc(100% - 65px);
+	vertical-align: middle;
 }
-.main-nav a {
+
+.main-nav_items {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.main-nav_item {
+	display: inline-block;
+	margin: 0 16px;
+}
+
+.main-nav_item a {
 	color: #0e4f1f;
 	text-decoration: none;
 }
