@@ -45,5 +45,5 @@ The `:not()` pseudo-class requires a comma-separated list of one or more selecto
 **Browser Compatibility**
 To check wether a certain porperty/class is supported on the various browswers:
 
-1. [caniuse.com](https://caniuse.com/)
+1. [caniuse.com](https://caniuse.com/) includes mobile web browsers too!.
 2. [MDN](https://developer.mozilla.org/en-US/) search for the property/class/feature and go to the bottom of the page.
