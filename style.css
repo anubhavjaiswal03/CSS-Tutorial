@@ -16,11 +16,83 @@ body {
 
 .section-title {
 	color: #2ddf5c;
+	text-align: center;
 }
 
 #product-overview h1 {
 	color: white;
 	font-family: 'Anton', sans-serif;
+}
+
+.plan {
+	background: #d5ffdc;
+	text-align: center;
+	padding: 16px;
+	margin: 8px;
+	display: inline-block;
+	width: 30%;
+	vertical-align: middle;
+	border-radius: 8px;
+	/* box-sizing: border-box; */
+}
+.plan__title {
+	color: #0e4f1f;
+}
+
+.plan__price {
+	color: lightslategray;
+}
+
+.plan__features {
+	list-style: none;
+	padding: 0;
+}
+
+.plan__feature {
+	margin: 8px 0;
+}
+
+.button {
+	background: #0e4f1f;
+	color: white;
+	font: inherit;
+	border: 2px solid #0e4f1f;
+	padding: 8px 16px;
+	border-radius: 4px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+	color: #0e4f1f;
+	background: white;
+}
+
+.button:focus {
+	outline: none;
+}
+
+.plan__highlighted {
+	background: #19b84c;
+	color: white;
+	box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.5);
+}
+
+.plan__highlighted .plan__price {
+	color: #0e4f1f;
+}
+
+.plan__highlighted .plan__title {
+	color: white;
+}
+
+.plan__annotation {
+	background: white;
+	color: #19b84c;
+	padding: 8px;
+	border-radius: 4px;
+	box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
 }
 
 .main-header {
@@ -66,11 +138,6 @@ body {
 	padding: 3px 0;
 }
 
-/* .main-nav_item a::after {
-	content: ' (Link)';
-	color: #ff1b68;
-} */
-
 .main-nav_item a:hover,
 .main-nav_item a:active {
 	color: white;
@@ -91,11 +158,62 @@ body {
 	border: none;
 }
 
-/* .main-nav_item a:active {
-	color: white;
-} */
+#key-features {
+	background: #ff1b68;
+	margin-top: 60px;
+	padding: 16px;
+}
 
-/* p::first-letter {
-	color: #ff1b68;
-	font-size: 25px;
-} */
+#key-features .section-title {
+	color: white;
+	margin: 32px;
+}
+
+.key-feature-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.key-feature {
+	display: inline-block;
+	width: 30%;
+	padding: 8px;
+	vertical-align: top;
+}
+.key-feature__image {
+	margin: auto;
+	width: 128px;
+	height: 128px;
+	background: #ffcede;
+	border: 2px solid black;
+	border-radius: 50%;
+}
+.key-feature__text {
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+}
+.main-footer {
+	background: black;
+	padding: 32px;
+	margin-top: 48px;
+}
+.main-footer__links {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.main-footer__link {
+	display: inline-block;
+	margin: 0 16px;
+}
+.main-footer__link a {
+	color: white;
+	text-decoration: none;
+}
+.main-footer__link a:hover,
+.main-footer__link a:active {
+	color: #ccc;
+}
