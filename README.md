@@ -1,3 +1,3 @@
-# Lesson 1
+# Lesson 13
 
-Adding CSS to html files using Inline Styles
+Using Multiple CSS Classes & Combined Selectors
