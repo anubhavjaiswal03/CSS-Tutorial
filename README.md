@@ -2,6 +2,8 @@
 
 Using Multiple CSS Classes & Combined Selectors
 
+## CSS Classes & Combined Selectors
+
 The following code targets all anchor tags with the active tag:
 
 ```CSS
@@ -9,6 +11,8 @@ a.active {
 	color: #521751;
 }
 ```
+
+## The Real Use of the CSS IDs
 
 CSS IDs are used to link in-page links to html blocks.
 In the following example we use the `anchor`'s `href` links to link to the different sections on the page:
