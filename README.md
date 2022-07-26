@@ -1,3 +1,5 @@
-# Lesson 15
+# Lesson 16
 
-Styling the Project adding the 'Plans' Section a 'Key Features' Section and a 'Footer' Section.
+Adding a 'Packages' Page and Styling it.
+
+Understanding the use of the [`float`](https://developer.mozilla.org/en-US/docs/Web/CSS/float), [`clear`](https://developer.mozilla.org/en-US/docs/Web/CSS/clear) properties.
