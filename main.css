@@ -27,11 +27,11 @@ body {
 	border: 5px solid black;
 	margin: 10px;
 }
-.parent .child-1 {
+/* .parent .child-1 {
 	position: fixed;
 	width: 100%;
 	top: 0px;
 	left: 0;
 	margin: 0;
 	box-sizing: border-box;
-}
+} */
