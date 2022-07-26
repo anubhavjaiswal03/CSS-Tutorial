@@ -2,7 +2,7 @@
 
 Understanding what [positioning](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning) elements in CSS means.
 
-## The [`position:`](https://www.w3schools.com/cssref/pr_class_position.asp) property
+## The [`position:`](https://developer.mozilla.org/en-US/docs/Web/CSS/position#syntax) property
 
 The position property specifies the type of positioning method used for an element (static, relative, absolute, fixed, or sticky).
 
@@ -38,3 +38,5 @@ h2.pos_right {
   left: 20px;
 }
 ```
+
+Play around with different positioning styles and `top:`, `right:`, `bottom:`, `left:` properties, to derive your intuition on how to position elements in CSS.
