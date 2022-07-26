@@ -8,3 +8,4 @@ Styling the project further by adding position styles to some elements
 
 - Understanding the [Z-index](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index)
 - Using the [`z-index:`](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index) attribute to send th ebackground image behind all the elements on the page.
+- Adding a Badge to the 'Plus' plan using `absolute` & `relative` values.
