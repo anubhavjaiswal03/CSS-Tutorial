@@ -1,11 +1,18 @@
-# Lesson 18
+# Lesson 19
 
-Styling the project further by adding position styles to some elements
+Working with Images & Background Images
 
-- Creating a Fixed Navigation Bar.
+## Undertanding Background Images
 
-- Using position to add a background image.
+We learn about the following attributes/properties:
 
-- Understanding the [Z-index](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index)
-- Using the [`z-index:`](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index) attribute to send th ebackground image behind all the elements on the page.
-- Adding a Badge to the 'Plus' plan using `absolute` & `relative` values.
+- [`background-size`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-size)
+- [`background-position`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position)
+- [`background-repeat`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat)
+- [`background-origin`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-origin)
+- [`background-clip`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip)
+- [`background-attachment`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment)
+
+## The Image Embed element [`<img>:`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img)
+
+The `<img>` HTML element embeds an image into the document.
