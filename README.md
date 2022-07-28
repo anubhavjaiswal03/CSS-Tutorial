@@ -1,3 +1,3 @@
-# Lesson 20
+# Lesson 21
 
-Adding the Customers Page.
+Understanding [Gradients](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Images/Using_CSS_gradients) & Filters
