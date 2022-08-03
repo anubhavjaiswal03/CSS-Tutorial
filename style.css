@@ -1,7 +1,6 @@
 #product-overview {
 	background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
-		url(images/freedom.jpg) left 10% bottom 70% / cover no-repeat border-box,
-		#ff1b68;
+		url(images/freedom.jpg) center / cover no-repeat border-box, #ff1b68;
 	/* background-image: url(freedom.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -24,13 +23,8 @@
 	width: 100vw;
 	height: 33vh;
 	/* padding: 0.67rem; */
-	margin-top: 2.75rem;
+	/* margin-top: 3.5rem; */
 	position: relative;
-}
-
-.section-title {
-	color: #2ddf5c;
-	text-align: center;
 }
 
 #product-overview h1 {
@@ -40,22 +34,30 @@
 	bottom: 5%;
 	left: 2%;
 	margin: 0;
+	font-size: 1.6rem;
 }
-.plan__list {
-	width: 80%;
-	margin: auto;
+
+@media (min-width: 40rem) and (min-height: 40rem) {
+	#product-overview {
+		height: 40vh;
+		background-position: 50% 25%;
+	}
+	#product-overview h1 {
+		font-size: 3rem;
+	}
+}
+
+.section-title {
+	color: #2ddf5c;
 	text-align: center;
 }
 .plan {
 	background: #d5ffdc;
 	text-align: center;
 	padding: 1rem;
-	margin: 0.5rem;
-	display: inline-block;
-	width: 30%;
-	vertical-align: middle;
+	margin: 0.5rem 0;
+	width: 100%;
 	border-radius: 0.5rem;
-	/* box-sizing: border-box; */
 }
 .plan__title {
 	color: #0e4f1f;
@@ -70,6 +72,24 @@
 	padding: 0;
 }
 
+@media (min-width: 40rem) {
+	.plan__list {
+		width: 100%;
+		text-align: center;
+	}
+	.plan {
+		display: inline-block;
+		width: 30%;
+		min-width: 13rem;
+		max-width: 25rem;
+		/* margin: 0.5rem; */
+		vertical-align: middle;
+	}
+	.plan__highlighted {
+		box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.5);
+	}
+}
+
 .plan__feature {
 	margin: 0.5rem 0;
 }
@@ -77,7 +97,7 @@
 .plan__highlighted {
 	background: #19b84c;
 	color: white;
-	box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.5);
+	/* box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.5); */
 }
 
 .plan__highlighted .plan__price {
@@ -98,7 +118,6 @@
 
 #key-features {
 	background: #ff1b68;
-	margin-top: 3.75rem;
 	padding: 1rem;
 }
 
@@ -115,10 +134,18 @@
 }
 
 .key-feature {
-	display: inline-block;
-	width: 30%;
 	padding: 0.5rem;
-	vertical-align: top;
+}
+@media (min-width: 40rem) {
+	.key-feature {
+		display: inline-block;
+		width: 30%;
+		max-width: 25rem;
+		vertical-align: top;
+	}
+	#key-features {
+		margin-top: 3.75rem;
+	}
 }
 
 .key-feature__image {
