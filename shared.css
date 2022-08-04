@@ -8,7 +8,7 @@ body {
 	overflow-x: hidden;
 }
 main {
-	min-height: calc(100vh - 3rem - 8rem);
+	min-height: calc(100vh - 3rem - 8.55rem);
 	margin-top: 3.375rem;
 }
 
@@ -162,9 +162,9 @@ main {
 	background: #0e4f1f;
 	color: white;
 	font: inherit;
-	border: 2px solid #0e4f1f;
-	padding: 0.5rem 1rem;
-	border-radius: 0.25rem;
+	border: 1.5px solid #0e4f1f;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
 	font-weight: bold;
 	cursor: pointer;
 }
@@ -178,7 +178,12 @@ main {
 .button:focus {
 	outline: none;
 }
-
+.button[disabled] {
+	cursor: not-allowed;
+	border-color: #a1a1a1;
+	background: #ccc;
+	color: #a1a1a1;
+}
 .main-footer {
 	background: black;
 	padding: 2rem;
