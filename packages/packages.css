@@ -1,3 +1,13 @@
+@font-face {
+	font-family: 'AnonymousPro';
+	src: url(AnonymousPro-Regular.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'AnonymousPro';
+	src: url(AnonymousPro-Bold.ttf) format('truetype');
+	font-weight: 700;
+}
+
 main {
 	/* margin-top: 43px; */
 	padding-top: 2.5rem;
@@ -50,7 +60,13 @@ main {
 	border: 1px solid #0e4f1f;
 	background: white;
 	color: #0e4f1f;
+	letter-spacing: normal;
+	line-height: 100%;
 	font-size: 1.25rem;
+	/* font: 700 1.25rem / normal 'AnonymousPro', sans-serif; */
+	/* font-style font-variant font-weight font-size/line-height font-family*/
+	/* text-decoration: underline wavy red; */
+	/* text-shadow: 2fpx 2px 7px gray; */
 }
 .clearfix {
 	clear: both;
