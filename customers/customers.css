@@ -55,24 +55,20 @@ main {
 
 .testimonial_text {
 	margin: 0.2rem;
-	/* font-variant: small-caps; */
-	/* font-stretch: ultra-expanded; */
-	/* white-space: pre-line; */
 }
 
 @media (min-width: 40rem) {
 	.testimonial {
 		margin: 3rem auto;
 		max-width: 1500px;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
 	}
 	.testimonial_image-container {
-		display: inline-block;
-		vertical-align: middle;
 		width: 65%;
 	}
 	.testimonial_info {
-		display: inline-block;
-		vertical-align: middle;
 		width: 30%;
 	}
 }

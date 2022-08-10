@@ -1,35 +1,22 @@
-# Lesson 26
+# Lesson 27
 
-Learning how to use fonts with CSS.
+Learning how to use flexbox with CSS.
 
-## Working with Text and Fonts
+## Understanding [Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
 
-Instead of adding fonts to each individual html files in our project, we can simply add such fonts to a shared css file and have it be linked to multiple html files.
+[Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout) is a one-dimensional layout method for arranging items in rows or columns. Items flex (expand) to fill additional space or shrink to fit into smaller spaces. This article explains all the fundamentals.
 
-- Working with [Google Fonts](https://fonts.google.com/)
-  ```CSS
-  @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-  ```
-- Importing and using a Custom Font
-  ```CSS
-  @font-face {
-    font-family: "Custom-Font";
-    src: url("custom-Font-Regular.ttf");
-  }
-   @font-face {
-    font-family: "Custom-Font";
-    src: url("custom-Font-Bold.ttf");
-    font-weight: 700;
-  }
-  ```
-- Font formats: [TrueType](https://en.wikipedia.org/wiki/TrueType)(.ttf) vs [Web Open Font Format](https://developer.mozilla.org/en-US/docs/Web/Guide/WOFF)(.woff)
-- Understanding Font Properties
-  - [`font-size`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size)
-  - [`font-variant`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant)
-  - [`font-stretch`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-stretch)
-  - [`letter-spacing`](https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing) & [`white-space`](https://developer.mozilla.org/en-US/docs/Web/CSS/white-space)
-  - [`line-height`](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height)
-  - [`text-decoration`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration) & [`text-shadow`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow)
-  - [`font-display`](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display)
+- [Flex Container](https://developer.mozilla.org/en-US/docs/Glossary/Flex_Container)
+  - [`flex-direction`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction) & [`flex-wrap`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap)
+  - [`align-items`](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items), [`justify-content`](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content) & [`align-content`](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content)
+- [Flex Item](https://developer.mozilla.org/en-US/docs/Glossary/Flex_Item)
+  - [`order`](https://developer.mozilla.org/en-US/docs/Web/CSS/order)
+  - [`align-self`](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self)
+  - [`flex-grow`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow) & [`flex-shrink`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink)
+  - [`flex-basis`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis)
+    ```CSS
+    flex: 1 1 auto;
+    /*flex: grow shrink flex-basis;*/
+    ```
 
-<p>This browser does not support PDFs. Please download the PDF to view it: <a href="css-fonts-slides.pdf">Download PDF</a>.</p></embed>
+<p>This browser does not support PDFs. Please download the PDF to view it: <a href="css-flexbox-slides.pdf">Download PDF</a>.</p></embed>

@@ -33,12 +33,10 @@ main {
 	left: 0;
 	background: #2ddf5c;
 	padding: 0.5rem 1rem;
-	z-index: 1;
-}
-
-.main-header > div {
-	display: inline-block;
-	vertical-align: middle;
+	z-index: 21;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .toggle-button {
@@ -68,27 +66,11 @@ main {
 	text-decoration: none;
 	font-weight: bold;
 	height: 3rem;
-	display: inline-block;
-	vertical-align: middle;
 }
 
 .main-header_brand img {
-	height: 100%;
-}
-
-.main-nav {
-	display: none;
-	text-align: right;
-	width: calc(100% - 4.2rem);
+	height: 2.5rem;
 	vertical-align: middle;
-}
-@media (min-width: 40rem) {
-	.main-nav {
-		display: inline-block;
-	}
-	.toggle-button {
-		display: none;
-	}
 }
 
 .main-nav_items {
@@ -96,11 +78,27 @@ main {
 	padding: 0;
 	list-style: none;
 	font-size: 1.5rem;
+	display: flex;
+}
+
+.main-nav {
+	display: none;
+}
+
+@media (min-width: 40rem) {
+	.main-nav {
+		display: flex;
+	}
+	.toggle-button {
+		display: none;
+	}
 }
 
 .main-nav_item {
-	display: inline-block;
 	margin: 0 1rem;
+}
+.main-nav_item--cta {
+	margin-right: 0;
 }
 
 .main-nav_item a,
@@ -123,6 +121,7 @@ main {
 	background: #ff1b68;
 	padding: 0.5rem 1rem;
 	border-radius: 0.5rem;
+	margin-right: 0;
 }
 
 .main-nav_item--cta a:hover,
@@ -149,9 +148,12 @@ main {
 	width: 90%;
 	height: 100%;
 	list-style: none;
-	margin: 10% auto;
+	margin: 0 auto;
 	padding: 0;
-	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .mobile-nav__item {
@@ -197,16 +199,21 @@ main {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .main-footer__link {
-	display: block;
-	margin: 1rem 0rem;
+	margin: 0.5rem 0rem;
 }
 @media (min-width: 40rem) {
 	.main-footer__link {
-		display: inline-block;
+		display: flex;
 		margin: 0rem 1rem;
+	}
+	.main-footer__links {
+		flex-direction: row;
+		justify-content: center;
 	}
 	.main-footer {
 		margin-top: 3rem;
@@ -222,5 +229,7 @@ main {
 }
 
 .open {
-	display: block !important;
+	display: flex !important;
+	flex-direction: column;
+	align-items: center;
 }
