@@ -25,4 +25,6 @@
   }
   ```
 
-<p>This browser does not support PDFs. Please download the PDF to view it: <a href="css-grid.pdf">Download PDF</a>.</p></embed>
+<p>CSS Grid Basics: <a href="css-grid.pdf">Download PDF</a>.</p></embed>
+
+<p>CSS Grid Summary: <a href="css-14-grid-summary.pdf">Download PDF</a>.</p></embed>
