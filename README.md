@@ -1,4 +1,4 @@
-# Lesson 28-1
+# Lesson 28-2
 
 Modifying our project to use Grid.
 
