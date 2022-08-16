@@ -15,7 +15,7 @@ Like tables, grid layout enables an author to align elements into columns and ro
 - [`grid-template-areas`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas)
 - [`repeat()`](https://developer.mozilla.org/en-US/docs/Web/CSS/repeat) & [`minmax()`](https://developer.mozilla.org/en-US/docs/Web/CSS/minmax)
 
-### Positioning elements in the Grid:
+### Positioning individual Elements in the Grid:
 
 - [`grid-column-start`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-start) & [`grid-column-end`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-end)
 - [`grid-row-start`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-start) & [`grid-row-end`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-end)
@@ -28,5 +28,10 @@ Like tables, grid layout enables an author to align elements into columns and ro
 - [`row-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/row-gap)
 - [`column-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/column-gap)
 - [`gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/gap) shorhand.
+
+### Positioning Grid Elements in the Container:
+
+- [`justify-items`](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-items)
+- [`align-items`](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)
 
 <p>This browser does not support PDFs. Please download the PDF to view it: <a href="css-grid.pdf">Download PDF</a>.</p></embed>
