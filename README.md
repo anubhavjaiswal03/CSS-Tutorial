@@ -94,4 +94,4 @@ For a desktop view the container Grid Layout Style works perfectly but it shrink
 }
 ```
 
-<p>This browser does not support PDFs. Please download the PDF to view it: <a href="css-grid.pdf">Download PDF</a>.</p></embed>
+<p>CSS Grid Basics: <a href="css-grid.pdf">Download PDF</a>.</p></embed>
