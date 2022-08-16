@@ -23,4 +23,4 @@ A collapsed track is treated as having a single fixed track sizing function of 0
 
 For the purpose of finding the number of auto-repeated tracks, the user agent floors the track size to a user agent specified value (e.g., 1px), to avoid division by zero.
 
-<p>This browser does not support PDFs. Please download the PDF to view it: <a href="css-grid.pdf">Download PDF</a>.</p></embed>
+<p>CSS Grid Basics: <a href="css-grid.pdf">Download PDF</a>.</p></embed>
