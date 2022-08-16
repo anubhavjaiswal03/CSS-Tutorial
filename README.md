@@ -1,97 +1,26 @@
-# Lesson 28
+# Lesson 28-1
 
-Learning how to use CSS [Grid](https://css-tricks.com/snippets/css/complete-guide-grid/).
+Learning about Autoflow.
 
-# Understanding CSS [Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
+- [`grid-auto-rows`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows)
+- [`grid-auto-columns`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns)
+- [`grid-auto-flows`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-flow)<br>
+  `grid-auto-flow:dense`
+  "dense" packing algorithm attempts to fill in holes earlier in the grid, if smaller items come up later. This may cause items to appear out-of-order, when doing so would fill in holes left by larger items.
+  If it is omitted, a "sparse" algorithm is used, where the placement algorithm only ever moves "forward" in the grid when placing items, never backtracking to fill holes. This ensures that all of the auto-placed items appear "in order", even if this leaves holes that could have been filled by later items.
 
-CSS Grid Layout excels at dividing a page into major regions or defining the relationship in terms of size, position, and layer, between parts of a control built from HTML primitives.
+Above is an example of **Implicit** Grid definition. This is how newly added content will look like.
 
-Like tables, grid layout enables an author to align elements into columns and rows. However, many more layouts are either possible or easier with CSS grid than they were with tables. For example, a grid container's child elements could position themselves so they actually overlap and layer, similar to CSS positioned elements.
+Whereas, using the grid-template properties is an example of **Explicit** Grid definition.
 
-### Defining a Grid Layout on a Container:
+## Understanding `auto-fill` & `auto-fit`
 
-- [`grid-template-columns`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns)
-- [`grid-template-rows`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows)
-- [`grid-template-areas`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas)
-- [`repeat()`](https://developer.mozilla.org/en-US/docs/Web/CSS/repeat) & [`minmax()`](https://developer.mozilla.org/en-US/docs/Web/CSS/minmax)
+`auto-fill`: If the grid container has a definite or maximal size in the relevant axis, then the number of repetitions is the largest possible positive integer that does not cause the grid to overflow its grid container. Treating each track as its maximal track sizing function (each independent value used to define grid-template-rows or grid-template-columns), if that is definite. Otherwise, as its minimum track sizing function, and taking grid-gap into account. If any number of repetitions would overflow, then the repetition is 1. Otherwise, if the grid container has a definite minimal size in the relevant axis, the number of repetitions is the smallest possible positive integer that fulfills that minimum requirement. Otherwise, the specified track list repeats only once.
 
-### Assigning/Placing elements in a Grid Layout.
+`auto-fit`: Behaves the same as auto-fill, except that after placing the grid items any empty repeated tracks are collapsed. An empty track is one with no in-flow grid items placed into or spanning across it. (This can result in all tracks being collapsed, if they're all empty.)
 
-- [`grid-column-start`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-start) & [`grid-column-end`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-end)
-- [`grid-row-start`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-start) & [`grid-row-end`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-end)
-- [`grid-area`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-area)
+A collapsed track is treated as having a single fixed track sizing function of 0px, and the gutters on either side of it collapse.
 
-### We can also create a [CSS Grid Layout using named grid lines](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines).
-
-### Adding gutters/gaps to the Grid Layout:
-
-- [`row-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/row-gap)
-- [`column-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/column-gap)
-- [`gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/gap) shorhand.
-
-### Positioning Grid Elements wihtin their assigned Grid Layout:
-
-- [`justify-items`](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-items)
-- [`align-items`](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)
-
-### Positioning the entire Grid Content:
-
-Sometimes the grid layout might have extra space left in it because of how the grid template was created in such scenarios we might need want to place our entire grid centrally. The following properties help to achieve that behaviour.
-
-- [`justify-content`](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content) To align the entire Grid in the x-axis.
-- [`align-content`](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content) to align the entire Grid in the y-axis.
-
-### Positiioning elements individualy in a Grid Layout:
-
-- [`justify-self`](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-self)
-- [`align-self`](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self)
-
-# Understanding Responsive Grids.
-
-For a desktop view the container Grid Layout Style works perfectly but it shrinks and squezes in grids in a mobile layout/smaller screens so we move Element-1 to a new row below Element - 2.
-
-```CSS
-.container {
-	background: lightgoldenrodyellow;
-	margin: 20px;
-	display: grid;
-
-	grid-template-columns: [hd-start] repeat(4, [col-start] 20% [col-end]) [hd-end];
-	grid-template-rows:
-		[row-1-start hd-start] 5rem [hd-end row-1-end row-2-start] minmax(
-			10px,
-			20rem
-		)
-		[row-2-end row-3-start] 100px
-		[row-3-end];
-
-	gap: 1rem 1rem;
-	grid-template-areas:
-		'header header header header'
-		'. side main main'
-		'footer footer footer footer';
-	justify-items: stretch;
-	align-items: stretch;
-
-}
-@media (max-width: 40rem) {
-	.container {
-		grid-template-columns: [hd-start] repeat(4, [col-start] 20% [col-end]) [hd-end];
-		grid-template-rows:
-			[row-1-start hd-start] 5rem [hd-end row-1-end row-2-start] minmax(
-				10px,
-				20rem
-			)
-			[row-2-end row-3-start] 150px
-			[row-3-end row-4-start] 100px [row-4-end];
-
-		grid-template-areas:
-			'header header header header'
-			'main main main main'
-			'side side side side'
-			'footer footer footer footer';
-	}
-}
-```
+For the purpose of finding the number of auto-repeated tracks, the user agent floors the track size to a user agent specified value (e.g., 1px), to avoid division by zero.
 
 <p>This browser does not support PDFs. Please download the PDF to view it: <a href="css-grid.pdf">Download PDF</a>.</p></embed>
