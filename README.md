@@ -1,6 +1,6 @@
-# Lesson 27
+# Lesson 28
 
-Learning how to use flexbox with CSS.
+Learning how to use CSS Grid.
 
 ## Understanding [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
 
