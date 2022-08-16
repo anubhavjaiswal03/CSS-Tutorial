@@ -10,7 +10,6 @@ Learning about Autoflow.
   If it is omitted, a "sparse" algorithm is used, where the placement algorithm only ever moves "forward" in the grid when placing items, never backtracking to fill holes. This ensures that all of the auto-placed items appear "in order", even if this leaves holes that could have been filled by later items.
 
 Above is an example of **Implicit** Grid definition. This is how newly added content will look like.
-
 Whereas, using the grid-template properties is an example of **Explicit** Grid definition.
 
 ## Understanding `auto-fill` & `auto-fit`
