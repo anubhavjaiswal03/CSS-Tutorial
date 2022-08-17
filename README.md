@@ -16,5 +16,7 @@ Understanding CSS [`transforms`](https://developer.mozilla.org/en-US/docs/Web/CS
   :bulb: **Note**: [`skewX(a)`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/skewX) is equivalent to `skew(a)`, [`skewY()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/skewY) skews in the y-axis.
 - [`scale()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale)<br>
   :bulb: **Note**: The `scale()` function only scales in 2D. To scale in 3D, use [`scale3d()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale3d) instead.
+- [`transform-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style) property.
+- [`backface-visibility`](https://developer.mozilla.org/en-US/docs/Web/CSS/backface-visibility) property.
 
 <p>CSS Transform Summary: <a href="css-transform-summary.pdf">Download PDF</a>.</p></embed>
