@@ -1,30 +1,15 @@
 # Lesson 29
 
-## Applying CSS Grid Layout to the Hosting website Project.
+## CSS Transforms
 
-- Modifying our project to use CSS Grid Layout. To place the footer and body in a CSS Grid Layout.
+Understanding CSS [`transforms`](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transforms/Using_CSS_transforms).
 
-  - [`fit-content()`](https://developer.mozilla.org/en-US/docs/Web/CSS/fit-content_function)
+## Rotating Elements and setting transform-origin
 
-- Styling the Start Hosting Page to add a CSS Grid Layout to the sign-up form.
-
-  ```CSS
-  @media (min-width: 40rem) {
-    .signup-form {
-      margin: auto;
-      width: 30rem;
-      grid-template-columns: 10rem auto;
-      gap: 1rem 0.5rem;
-    }
-    .signup-form__checkbox {
-      grid-column: span 2;
-    }
-    .signup-form [id='title'] {
-      grid-column: span 2;
-    }
-  }
-  ```
-
-<p>CSS Grid Basics: <a href="css-grid.pdf">Download PDF</a>.</p></embed>
-
-<p>CSS Grid Summary: <a href="css-14-grid-summary.pdf">Download PDF</a>.</p></embed>
+- [`transform`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform) property.
+- [`transform-origin`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin) property.
+- [`rotateZ()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotateZ)<br>
+  :bulb: **Note**: `rotateZ(a)` is equivalent to `rotate(a)` or `rotate3d(0, 0, 1, a)`. :bulb:
+- [`translate()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate)<br>
+:bulb: **Note**: `translateX(tx)` is equivalent to `translate(tx, 0)` or `translate3d(tx, 0, 0)`. :bulb:
+<p>CSS Transform Summary: <a href="css-transform-summary.pdf">Download PDF</a>.</p></embed>
