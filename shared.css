@@ -31,6 +31,8 @@ main {
 
 .backdrop {
 	display: none;
+	opacity: 0;
+	transition: opacity 200ms ease-in;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -129,6 +131,9 @@ main {
 	border-bottom: 5px solid white;
 }
 
+.main-nav_item--cta {
+	animation: wiggle 200ms 3s 8 ease-out none;
+}
 .main-nav_item--cta a,
 .mobile-nav__item--cta a {
 	color: white;
@@ -149,6 +154,7 @@ main {
 
 .mobile-nav {
 	display: none;
+	transform: translate(-100%, 0);
 	position: fixed;
 	z-index: 101;
 	top: 0;
@@ -156,6 +162,7 @@ main {
 	background: white;
 	width: 80%;
 	height: 100vh;
+	transition: transform 200ms ease-out;
 }
 
 .mobile-nav__items {
@@ -245,7 +252,22 @@ main {
 }
 
 .open {
-	display: flex !important;
+	/* display: flex !important;
 	flex-direction: column;
-	align-items: center;
+	align-items: center; */
+	display: block !important;
+	opacity: 1 !important;
+	transform: translate(0, 0) !important;
+}
+
+@keyframes wiggle {
+	0% {
+		transform: rotateZ(0);
+	}
+	50% {
+		transform: rotateZ(-5deg);
+	}
+	100% {
+		transform: rotateZ(5deg);
+	}
 }

@@ -27,11 +27,13 @@ main {
 	width: 80%;
 	position: relative;
 	overflow: hidden;
+	transition: transform 200ms;
 }
 .packages:hover,
 .packages:active {
 	border-color: orangered !important;
 	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	transform: translateY(-0.5rem);
 }
 .package-link {
 	text-decoration: none;
