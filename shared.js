@@ -31,8 +31,7 @@ if (modalActionNo) {
 
 function closeModel() {
 	console.log('cloeModel()');
-	// backdrop.style.display = 'none';
-	// modal.style.display = 'none';
+
 	if (modal) {
 		modal.classList.remove('open');
 	}
@@ -40,21 +39,17 @@ function closeModel() {
 	mobileNav.classList.remove('open');
 	setTimeout(function () {
 		backdrop.style.display = 'none';
-		mobileNav.style.display = 'none';
+		// mobileNav.style.display = 'none';
 	}, 200);
 }
 
 toggleButton.addEventListener('click', () => {
 	console.log('toggle button clicked');
 	backdrop.style.display = 'block';
-	mobileNav.style.display = 'block';
 	setTimeout(function () {
 		backdrop.classList.add('open');
 		mobileNav.classList.add('open');
 	}, 10);
-
-	// mobileNav.style.display = 'block';
-	// backdrop.style.display = 'block';
 });
 
 ctaButton.addEventListener('animationstart', function (event) {
