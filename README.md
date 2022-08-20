@@ -16,7 +16,8 @@ sass --watch sourcefile.scss:destinationfile.css
 - ### Improving Media Queries
 - ### Understanding Inheritance
 - ### Adding Mixins
+- ### Using the '&' Operator
 
-## SASS [Documentation](https://sass-lang.com/documentation/)
+SASS [Documentation](https://sass-lang.com/documentation/).
 
-<p>CSS Future Proof Document: <a href="css-future-css.pdf">Download PDF</a>.</p></embed>
+<p>SASS <a href="https://sass-lang.com/guide">Deep Dive</a>.</p>
